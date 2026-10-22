@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FoxShift LLC</title>
 <meta name="description" content="FoxShift LLC builds software tools. Our current product is Wardrill, a Warhammer 40,000 list-building and tournament-prep companion.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="FoxShift LLC">
+<meta property="og:description" content="FoxShift LLC builds software tools. Our current product is Wardrill.">
+<meta property="og:image" content="https://foxshift.net/assets/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   :root { --bg:#0f1115; --panel:#171a21; --text:#e8eaf0; --muted:#9aa1b2; --accent:#ff7a2f; --line:#272b36; }
   @media (prefers-color-scheme: light) {
@@ -13,8 +21,8 @@
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
   .wrap { max-width:720px; margin:0 auto; padding:56px 20px 40px; }
-  h1 { font-size:2rem; margin:0 0 4px; letter-spacing:.01em; }
-  h1 span { color:var(--accent); }
+  .brand { display:block; margin:0 0 8px; }
+  .brand img { display:block; height:56px; width:auto; max-width:100%; }
   .tag { color:var(--muted); margin:0 0 40px; }
   .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px; margin-bottom:20px; }
   .card h2 { margin:0 0 8px; font-size:1.15rem; }
@@ -27,7 +35,12 @@
 </head>
 <body>
 <main class="wrap">
-  <h1>Fox<span>Shift</span> LLC</h1>
+  <h1 class="brand">
+    <picture>
+      <source srcset="assets/logo-horizontal-white.png" media="(prefers-color-scheme: dark)">
+      <img src="assets/logo-horizontal-orange.png" alt="FoxShift LLC" width="900" height="239">
+    </picture>
+  </h1>
   <p class="tag">We build software tools.</p>
 
   <section class="card">
